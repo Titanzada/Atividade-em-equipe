@@ -1,7 +1,8 @@
 import sys
-sys.path.append("/workspaces/Atividade-em-equipe")
 
-from project.models.enums.UnidadeFederativa import UnidadeFederativa
+sys.path.append("/workspaces/Atividade-em-equipe")
+from project.enums import UnidadeFederativa
+
 
 class Endereco():
     def __init__(self, logradouro:str, numero:str, complemento:str, uf:UnidadeFederativa) -> None:
@@ -15,7 +16,7 @@ class Endereco():
                 f"\nLogradouro: {self.logradouro}"
                 f"\nNúmero: {self.numero}"
                 f"\nComplemento: {self.complemento}"
-                f"\nUnidade Federativa: {self.uf.nome}"
+                f"\nUnidade Federativa: {self.uf}"
                 )
 
 endereco = Endereco("Rua BEILA", "130", "1º Andar", UnidadeFederativa.BAHIA)

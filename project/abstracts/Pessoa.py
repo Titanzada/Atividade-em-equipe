@@ -1,5 +1,5 @@
 from abc import ABC , abstractmethod
-from projeto.models import Endereco
+from projeto.models. import Endereco
 
 class Pessoa(ABC):
     def __init__(self,nome:str, telefone :str, email:str,endereco: Endereco):
