@@ -1,5 +1,6 @@
 from abc import ABC , abstractmethod
-from projeto.models. import Endereco
+from project.models.Endereco import Endereco
+
 
 class Pessoa(ABC):
     def __init__(self,nome:str, telefone :str, email:str,endereco: Endereco):
@@ -9,6 +10,6 @@ class Pessoa(ABC):
         self.endereco = endereco
    
     @abstractmethod
-    def apresentar(self):
+    def salario_final(self):
         pass
   
