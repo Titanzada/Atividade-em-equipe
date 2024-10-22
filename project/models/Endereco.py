@@ -1,6 +1,4 @@
-import sys
 
-sys.path.append("/workspaces/Atividade-em-equipe")
 from project.enums import UnidadeFederativa
 
 
@@ -19,5 +17,3 @@ class Endereco():
                 f"\nUnidade Federativa: {self.uf}"
                 )
 
-endereco = Endereco("Rua BEILA", "130", "1º Andar", UnidadeFederativa.BAHIA)
-print(endereco)
